@@ -1,0 +1,24 @@
+[project]
+name = "nhom01-gdg"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "imbalanced-learn>=0.14.2",
+    "ipykernel>=7.4.0",
+    "jupyter>=1.1.1",
+    "kagglehub>=1.0.2",
+    "lightgbm>=4.7.0",
+    "pandas>=3.0.6",
+    "scikit-learn>=1.9.1",
+    "shap>=0.53.0",
+    "xgboost>=3.4.1",
+]
+
+[project.scripts]
+nhom01-gdg = "nhom01_gdg:main"
+
+[build-system]
+requires = ["uv_build>=0.12.10,<0.13.0"]
+build-backend = "uv_build"
