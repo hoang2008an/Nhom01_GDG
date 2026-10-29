@@ -12,9 +12,11 @@ dependencies = [
     "kagglehub>=1.0.2",
     "lightgbm>=4.7.0",
     "matplotlib>=3.11.2",
+    "optuna>=5.0.0",
     "pandas>=3.0.6",
     "scikit-learn>=1.9.1",
     "seaborn>=0.13.2",
+    "scikit-learn-intelex>=2026.1.0",
     "shap>=0.53.0",
     "xgboost>=3.4.1",
 ]
@@ -25,3 +27,11 @@ nhom01-gdg = "nhom01_gdg:main"
 [build-system]
 requires = ["uv_build>=0.12.10,<0.13.0"]
 build-backend = "uv_build"
+
+[tool.ty.environment]
+extra-paths=['./notebooks/credit_card']
+
+[dependency-groups]
+dev = [
+    "optuna-dashboard>=0.21.0",
+]
